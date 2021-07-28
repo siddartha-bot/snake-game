@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="body">
+        <h1 id="header" class="text-4xl text-black-900">Snake Game</h1>
+    <div id="text" class="  flex flex-col float-left font-serif mb-96 mt-96  " >
+        <button id="new" onclick="restart()" class=" bg-blue-300 border-2 border-blue-600 rounded-lg px-1 ml-4 mr-4  m-1 text-blue-700 hover:bg-blue-100">Restart</button>
+        
+        <div class=" px-1 mt-4 ml-4 mr-4 m-1  flex flex-row justify-between"> 
+
+        <label for="speed" class=" text-black-900 pt-3 mr-4 flex justify-items-center text-2xl  ">Speed</label>
+        <select name="speed" value="speed"  id = "movement" class="bg-blue-300 border-2 border-blue-600 rounded-lg px-2 m-4 text-blue-500 flex justify-center hover:bg-blue-100">
+            <option value="5">5</option> 
+            
+            <option value="10">10</option> 
+             
+            <option value="15">15</option> 
+            
+            <option value="20">20</option> 
+            
+        </select> 
+        <button id="button" onclick="selspeed()" class="bg-blue-300 border-2 border-blue-700 rounded-lg px-4 m-4 text-blue-700 flex align-text-bottom hover:bg-blue-100">select</button>
+        </div>
+        
+    </div>
+    
+        <div id="scoreBox">Score: 0</div>
+        
+        <div id="hiscoreBox">HiScore: 0</div>
+        <div id="board"></div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
